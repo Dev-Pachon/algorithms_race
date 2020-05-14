@@ -8,16 +8,16 @@ import javafx.stage.WindowEvent;
 
 public class AlgorithmsRaceGUI {
 	
-	private Stage stage; 
+	private Stage stage;
+	
+	
+	
 	
 	public AlgorithmsRaceGUI(Stage st) {
 		stage = st;
 	}
 	
 	public void initialize() {
-		
-		
-		
 		
 		stage.setOnCloseRequest(new EventHandler<WindowEvent>() {
 			
@@ -52,6 +52,14 @@ public class AlgorithmsRaceGUI {
 	}
 	
 	public void updateProgressAL(long i) {
+		
+	}
+	
+	public void updateProgressLL(long i) {
+		
+	}
+
+	public void updateProgressBST(long i) {
 		
 	}
 }

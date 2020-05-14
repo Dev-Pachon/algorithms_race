@@ -176,7 +176,7 @@ public class AlgorithmsRace {
 		}
 	}
 	
-	public boolean consultBSTIterative() {
+	public boolean consultBSTIterative(long l) {
 		return false;
 	}
 	
@@ -254,11 +254,11 @@ public class AlgorithmsRace {
 		}
 	}
 	
-	public void deleteBSTIterative() {
+	public void deleteBSTIterative(long l) {
 		
 	}
 	
-	public void deleteBSTRecursive() {
+	public void deleteBSTRecursive(long l) {
 		
 	}
 }
