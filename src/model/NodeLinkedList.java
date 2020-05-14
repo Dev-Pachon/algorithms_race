@@ -7,13 +7,13 @@ public class NodeLinkedList {
 	
 	private NodeLinkedList prev;
 	
-	private Long value;
+	private long value;
 	
-	public NodeLinkedList(Long l){
+	public NodeLinkedList(long l){
 		value = l;
 	}
 
-	public Long getValue() {
+	public long getValue() {
 		return value;
 	}
 	

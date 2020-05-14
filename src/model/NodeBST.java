@@ -4,9 +4,9 @@ public class NodeBST {
 	private NodeBST father;
 	private NodeBST left;
 	private NodeBST right;
-	private Long value;
+	private long value;
 	
-	public NodeBST(Long l) {
+	public NodeBST(long l) {
 		value = l;
 	}
 
@@ -34,7 +34,7 @@ public class NodeBST {
 		this.right = right;
 	}
 
-	public Long getValue() {
+	public long getValue() {
 		return value;
 	}
 }

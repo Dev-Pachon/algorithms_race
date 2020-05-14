@@ -34,4 +34,24 @@ public class AlgorithmsRaceGUI {
 	public void start(ActionEvent event) {
 		
 	}
+	
+	public void updateMainCronometer(long l) {
+		
+	}
+	
+	public void updateALCronometer(long l) {
+		
+	}
+	
+	public void updateLLCronometer(long l) {
+		
+	}
+
+	public void updateBSTCronometer(long l) {
+		
+	}
+	
+	public void updateProgressAL(long i) {
+		
+	}
 }

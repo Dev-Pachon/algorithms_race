@@ -22,7 +22,7 @@ public class AlgorithmsRace {
 		arrayList.add(l);
 	}
 	
-	public void addLinkedListIterative(Long l) {
+	public void addLinkedListIterative(long l) {
 		if(first == null) {
 			first = new NodeLinkedList(l);
 		}else {
@@ -35,7 +35,7 @@ public class AlgorithmsRace {
 		}
 	}
 	
-	public void addLinkedListRecursive(Long l) {
+	public void addLinkedListRecursive(long l) {
 		if(first == null) {
 			first = new NodeLinkedList(l);
 		}else {
@@ -53,7 +53,7 @@ public class AlgorithmsRace {
 		}
 	}
 	
-	public void addBSTIterative(Long l) {
+	public void addBSTIterative(long l) {
 		if(root == null) {
 			root = new NodeBST(l);
 		}else {
@@ -81,7 +81,7 @@ public class AlgorithmsRace {
 		}
 	}
 	
-	public void addBSTRecursive(Long l) {
+	public void addBSTRecursive(long l) {
 		if(root == null) {
 			root = new NodeBST(l);
 		}else {
@@ -89,7 +89,7 @@ public class AlgorithmsRace {
 		}
 	}
 	
-	private NodeBST addBSTR(NodeBST n,Long l) {
+	private NodeBST addBSTR(NodeBST n,long l) {
 		
 		if(l<n.getValue()) {
 			if(n.getLeft()!=null) {
@@ -110,7 +110,7 @@ public class AlgorithmsRace {
 		}
 	}
 	
-	public boolean consultALIterative(Long l) {
+	public boolean consultALIterative(long l) {
 		boolean found = false;
 		for(int i = 0; i < arrayList.size()&&!found;i++) {
 			if(arrayList.get(i)==l) {
@@ -121,7 +121,7 @@ public class AlgorithmsRace {
 		return found;
 	}
 	
-	public boolean consultALRecursive(Long l) {
+	public boolean consultALRecursive(long l) {
 		if(arrayList.isEmpty()) {
 			return false;
 		}else {
@@ -129,7 +129,7 @@ public class AlgorithmsRace {
 		}
 	}
 	
-	private boolean consultALRecursive(Long searched,int posA) {
+	private boolean consultALRecursive(long searched,int posA) {
 		if(searched==arrayList.get(posA)) {
 			return true;
 		}else {
@@ -141,7 +141,7 @@ public class AlgorithmsRace {
 		}
 	}
 	
-	public boolean consultLLIterative(Long l) {
+	public boolean consultLLIterative(long l) {
 		boolean found = false;
 		if(first!=null) {
 			NodeLinkedList temp = first;
@@ -156,7 +156,7 @@ public class AlgorithmsRace {
 		return found;
 	}
 	
-	public boolean consultLLRecursive(Long l) {
+	public boolean consultLLRecursive(long l) {
 		if(first != null) {
 			return consultLLR(l,first);
 		}else {
@@ -164,7 +164,7 @@ public class AlgorithmsRace {
 		}
 	}
 	
-	private boolean consultLLR(Long l, NodeLinkedList node) {
+	private boolean consultLLR(long l, NodeLinkedList node) {
 		if(node.getValue()==l) {
 			return true;
 		}else {
@@ -180,16 +180,16 @@ public class AlgorithmsRace {
 		return false;
 	}
 	
-	public boolean consultBSTRecursive(Long l) {
+	public boolean consultBSTRecursive(long l) {
 		consultBSTR(root,l);
 		return false;
 	}
 	
-	private boolean consultBSTR(NodeBST node,Long l) {
+	private boolean consultBSTR(NodeBST node, long l) {
 		return false;
 	}
 	
-	public void deleteALIterative(Long l) {
+	public void deleteALIterative(long l) {
 		boolean deleted = false;
 		for(int i = 0; i < arrayList.size()&&!deleted ; i++ ) {
 			if(arrayList.get(i)==l) {
@@ -199,13 +199,13 @@ public class AlgorithmsRace {
 		}
 	}
 	
-	public void deleteALRecursive(Long l) {
+	public void deleteALRecursive(long l) {
 		if(!arrayList.isEmpty()) {
 			deleteALR(l,0);
 		}
 	}
 	
-	private void deleteALR(Long l, int posA) {
+	private void deleteALR(long l, int posA) {
 		if(l==arrayList.get(posA)) {
 			arrayList.remove(posA);
 		}else {
@@ -215,7 +215,7 @@ public class AlgorithmsRace {
 		}
 	}
 	
-	public void deleteLLIterative(Long l) {
+	public void deleteLLIterative(long l) {
 		if(first!=null) {
 			NodeLinkedList temp = first;
 			boolean deleted = false;
@@ -230,13 +230,13 @@ public class AlgorithmsRace {
 		}
 	}
 	
-	public void deleteLLRecursive(Long l) {
+	public void deleteLLRecursive(long l) {
 		if(first!=null) {
 			deleteLLR(l,first);
 		}
 	}
 	
-	private void deleteLLR(Long l, NodeLinkedList node) {
+	private void deleteLLR(long l, NodeLinkedList node) {
 		if(l==node.getValue()) {
 			if(node.getPrev()==null) {
 				first=null;
